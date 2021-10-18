@@ -53,22 +53,21 @@
             },
             methods: {
                 incrementCounterHandler() {
-                    this.counter ++
+                    this.counter += 1;
                 },
                 decrementCounterHandler() {
-                    this.counter --
+                    this.counter -= 1;
                 },
                 incrementStepHandler() {
-                    this.step += 2
+                    this.step += 2;
                 },
                 decrementStepHandler() {
-                    this.step -= 2
+                    this.step -= 2;
                 }
             },
             computed: {
                 sum() {
-                    let result = this.counter + this.step
-                    return result
+                    return this.counter + this.step;
                 }
             }
         })
@@ -85,10 +84,10 @@
             step: 2
         };
 
-        const incrementCounterHandler = function () {};
-        const decrementCounterHandler = function () {};
+        const incrementCounterHandler = function () { };
+        const decrementCounterHandler = function () { };
         //...
-        const getSum = function () {};
+        const getSum = function () { };
 
         const queue = [getSum];
 
